@@ -8,4 +8,4 @@ def test_home_status_code_200_ok():
 def test_home_response_hello_devops():
     client = app.test_client()
     resp = client.get("/")
-    assert resp.get_json() == {"message": "Hello DevOps"}
+    assert resp.get_json() == {"message": "Hello DevOps, this is a full cicle explaination (CI/CD)."}
